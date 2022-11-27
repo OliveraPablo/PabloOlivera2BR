@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="src/Logo_opcion_1_original.png" type="image/icon type">
+  <title>Instituto Tecnológico de Informática </title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+  <script src="scripts.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <!-- CSS only -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</head>
+<body>
+ 
+  <div class="menu-bar">
+    
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid" id="container-fluid">
+      <span class="logo-container" id="logo-container">
+        <img src="src/Logo_opcion_2_blanco.png"  width="50" height="45" alt=""></i>
+
+      </span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        
+        
+        <ul class="navbar-nav ">
+        
+          <li class="nav-item">
+            <div class="inicio"><a class="nav-link active" href=""><div class="inicioText">Inicio</div></a></div>
+           
+          </li>
+          <li class="nav-item dropdown"  ><a class="nav-link dropdown-toggle" href="" id="navbarDropdown-est" role="button" data-bs-toggle="dropdown">Estudiantes</a>
+            <ul class="dropdown-menu " id="menu-estudiantes">
+              <li><a class="dropdown-item" href="">Programas</a></li>
+              <li><a class="dropdown-item" href="">Horarios</a></li>
+              <li><a class="dropdown-item" href="">Exámenes</a></li>
+              <li><a class="dropdown-item" href="">Avisos de inasistencias</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle " href="" id="navbarDropdown-doc" role="button" data-bs-toggle="dropdown">Docentes</a>
+            <ul class="dropdown-menu " id="menu-docentes">
+              <li><a class="dropdown-item" href="">Reuniones </a></li>
+              <li><a class="dropdown-item" href="">Avisos</a></li>
+           
+            </ul></li>
+          <li class="nav-item"><a class="nav-link" id="navElement" >Biblioteca</a></li>
+          <li class="nav-item"><a class="nav-link" id="navElement" >Novedades</a></li>
+          <li class="nav-item"><a class="nav-link" id="navElement">Contacto</a></li>
+  
+        </ul>
+        <hr class="text-white-50">
+      </div>
+      <div class="mode-toggler" ><img src="src/crescent-moon.png "id="mode-toggler" style="width:25px;" onClick="changeMode();"alt=""></div>
+      
+    </div>
+    
+  </nav>
+  <div class="grid">
+    <div class="item">
+      <div class="item-1" id="item-1">
+        <div class="decoration item-1-decoration" id="item-1-dec">
+        </div>
+        <div class="item-1-image item-image"id="item-1-img">
+          <p class="title-horarios title">Horarios</p>
+          <div class="turnos-container">
+            <div class="links">
+              <ul class="links-list">
+                <li class="links-item">
+                  <a href="" class="horarios mat title">Matutino</a>
+                </li>
+                <li class="links-item">
+                  <a href="" class="horarios ves title">Vespertino</a>
+                </li >
+                <li class="links-item">
+                  <a href="" class ="horarios noc title">Nocturno</a>
+                </li >
+              </ul>
+              
+              
+              
+            </div>
+    
+            </div>
+        </div>
+     
+      </div>
+    </div>
+    <div class="item empty">
+      
+    </div>
+    <div class="item">
+      <div class="item-2" id="item-2">
+        <div class="decoration item-2-decoration" id="item-2-dec">
+        </div>
+        <div class="item-2-image item-image" id="item-2-img">
+          <a class="title-novedades title">Novedades</a>
+        </div>
+  
+      </div>
+    </div>
+    
+    <div class="item empty">
+      
+    </div>
+    <div class="item empty">
+      
+    </div>
+    <div class="item empty">
+      
+    </div>
+    <div class="item-3"id="item-3">
+     
+      <div class="item-3-image item-image"id="item-3-img">
+        <a class="title-inscripciones title">Inscripciones</a>
+      </div>
+       <div class="decoration item-3-decoration"id="item-3-dec">
+      </div>
+    </div>
+    <div class="item empty">
+      
+    </div>
+    <div class="item-4"id="item-4">
+      
+      <div class="item-4-image item-image"id="item-4-img">
+        <a class="title-examenes title">Calendario de exámenes</a>
+      </div>
+      <div class="decoration item-4-decoration" id="item-4-dec">
+      </div>
+    </div>
+  </div>
+ 
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="src/direccion.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="src/2br-1.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="src/2br-2.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="src/mesapingpong.jpg" alt="Second slide">
+      </div>
+    </div>
+  </div>
+
+    <div class="contact-info" id="contact-info">
+      <p class="contact-info-ins">©2022 Instituto Tecnológico de Informática</p>
+   <p class="contact-info-add">Durazno 1328 entre Ejido y Aquiles R. Lanza</p>
+   <p class="contact-info-cit">Montevideo, Uruguay</p>
+   <p class="contact-info-tel">Teléfono: 29012257 - Fax: 29027144 Interno 13</p>
+  <p class="contact-info-alm">Diseño del alumno: Pablo Olivera</p> 
+   </div>
+  
+</body>
+<!-- <footer>
+  <div class="contact-info">
+    <p class="contact-info-ins">©2022 Instituto Tecnológico de Informática</p>
+ <p class="contact-info-add">Durazno 1328 entre Ejido y Aquiles R. Lanza</p>
+ <p class="contact-info-cit">Montevideo, Uruguay</p>
+ <p class="contact-info-tel">Teléfono: 29012257 - Fax: 29027144 Interno 13</p>
+<p class="contact-info-alm">Diseño del alumno: Pablo Olivera</p> 
+ </div>
+</footer> -->
+</html>
